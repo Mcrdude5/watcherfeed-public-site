@@ -19,7 +19,7 @@ def main() -> int:
         problems.append("Logo is missing or is not a RIFF/WebP image")
     elif LOGO.read_bytes()[8:12] != b"WEBP":
         problems.append("Logo WebP signature invalid")
-    if not FAVICON.is_file() or FAVICON.read_bytes()[:8] != b"\\x89PNG\\r\\n\\x1a\\n":
+    if not FAVICON.is_file() or FAVICON.read_bytes()[:8] != bytes.fromhex("89504e470d0a1a0a"):
         problems.append("Favicon is missing or is not PNG")
 
     for page in PAGES:
