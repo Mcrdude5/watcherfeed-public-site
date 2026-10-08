@@ -1,1 +1,20 @@
 :root{color-scheme:dark;--bg:#06101b;--panel:#10263a;--text:#f5f8fb;--muted:#a7b5c4;--cyan:#2fd7ff;--line:rgba(255,255,255,.12)}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top,#10253b 0%,var(--bg) 46%,#03070d 100%);color:var(--text);font:16px/1.65 Arial,sans-serif}a{color:var(--cyan)}.wrap{width:min(1050px,calc(100% - 36px));margin:0 auto}header{background:#03070d;border-bottom:1px solid var(--line)}.navrow,.footrow{display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:76px;flex-wrap:wrap}.brand{display:inline-flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.04em;color:#fff;text-decoration:none}.brandicon{width:36px;height:36px;border-radius:9px;object-fit:cover;display:block;flex:0 0 auto}nav a,.footrow a{color:#e4edf6;margin-left:18px}.hero{text-align:center;padding:78px 0 48px}.mark{display:block;width:144px;height:144px;border-radius:25px;margin:0 auto;object-fit:cover;border:1px solid rgba(47,215,255,.55);box-shadow:0 0 36px rgba(47,215,255,.22)}h1{font-size:clamp(2.3rem,6vw,4.6rem);line-height:1.05;margin:22px 0 18px}.lead{max-width:760px;margin:auto;color:var(--muted);font-size:1.15rem}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:28px auto 58px}.card{background:linear-gradient(180deg,#10263a,#0b1927);border:1px solid var(--line);border-radius:18px;padding:24px}.card p,.legal p,.legal li{color:#cbd7e2}.legal{max-width:850px;padding:48px 0 68px}.notice{border:1px solid rgba(47,215,255,.25);background:rgba(47,215,255,.06);padding:16px 18px;border-radius:14px}footer{border-top:1px solid var(--line);background:#03070d;color:var(--muted);padding:12px 0 24px}@media(max-width:760px){.grid{grid-template-columns:1fr}.navrow{padding:14px 0;gap:10px}nav{display:flex;flex-wrap:wrap;gap:12px;width:100%}nav a{margin-left:0;font-size:.91rem}.mark{width:128px;height:128px}.footrow{align-items:flex-start}.footrow a{margin:0 14px 0 0}}
+/* Review-visible product documentation, not an unsupported public-posting claim */
+.product-detail{padding:32px 0 16px}
+.product-detail h2{font-size:clamp(1.6rem,3.7vw,2.25rem);line-height:1.2;max-width:790px;margin:7px 0 14px}
+.eyebrow{text-transform:uppercase;letter-spacing:.13em;font-size:.72rem;font-weight:800;color:var(--cyan)}
+.section-intro{color:var(--muted);max-width:850px;margin:0 0 20px}
+.step-grid{list-style:none;counter-reset:workflow;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;margin:0;padding:0}
+.step-grid li{counter-increment:workflow;padding:22px;border:1px solid var(--line);border-radius:16px;background:rgba(16,38,58,.62)}
+.step-grid li::before{content:counter(workflow);display:grid;place-items:center;width:34px;height:34px;border:1px solid rgba(47,215,255,.6);border-radius:10px;margin-bottom:11px;color:var(--cyan);font-weight:800}
+.step-grid h3{font-size:1.05rem;margin:0 0 7px}
+.step-grid p,.review-info p{color:#cbd7e2;margin:0 0 12px}
+.details-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:34px auto 20px}
+.details-grid .card{height:100%}
+.details-grid .card h2{margin:0 0 10px}
+.details-grid .card p:last-child{margin-top:20px}
+.review-info{padding:26px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.review-info h2{font-size:1.3rem;margin:0 0 10px}
+code{font-size:.92em;color:#bcefff;overflow-wrap:anywhere}
+.legal h3{font-size:1.02rem;margin:18px 0 6px}.legal h2{font-size:1.4rem;margin:26px 0 8px}.legal p{margin:0 0 14px}
+@media(max-width:760px){.step-grid,.details-grid{grid-template-columns:1fr}}
